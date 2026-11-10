@@ -10,6 +10,9 @@ and a minimal reproduction with synthetic data. Do not post exploit details,
 credentials, or private conversation data in public issues or pull requests.
 No response-time or bounty commitment is currently made.
 
+If the advisory forms are unavailable, email
+[adam@migus.org](mailto:adam@migus.org) privately instead.
+
 ## Trust and deployment boundaries
 
 - Installed packs and in-process tools execute Python. Treat them as trusted

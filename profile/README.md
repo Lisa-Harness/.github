@@ -29,4 +29,13 @@ selection and host policy decide what the agent can see. See the
 - [Contributing](https://github.com/Lisa-Harness/lisa/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/Lisa-Harness/lisa/blob/main/CODE_OF_CONDUCT.md)
 - [Security policy](https://github.com/Lisa-Harness/lisa/blob/main/SECURITY.md) with private vulnerability reporting
 
+## Who's behind Lisa Harness
+
+Lisa is built as a security-first agent runtime: explicit approvals,
+inspectable tool calls, and enforceable limits are the discipline of two
+decades in identity and privileged-access engineering.
+
+Maintainer: [Adam Migus, The Migus Group](https://github.com/amigus)
+([mig.us/adam](https://mig.us/adam))
+
 Framework and pack code is [MIT licensed](https://github.com/Lisa-Harness/lisa/blob/main/LICENSE).

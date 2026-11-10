@@ -23,8 +23,8 @@ community. Disagreement with a technical decision is not misconduct.
 
 ## Reporting
 
-**Confidential conduct contact is not yet configured.** Do not publish
-sensitive incident details or identify affected people in a public issue. If
-necessary, request a private maintainer contact without disclosing details.
+Report conduct issues confidentially to the maintainer at
+[adam@migus.org](mailto:adam@migus.org). Do not publish sensitive incident
+details or identify affected people in a public issue.
 
 Vulnerability reports use the separate [security policy](SECURITY.md).
