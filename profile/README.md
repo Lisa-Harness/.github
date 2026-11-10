@@ -35,6 +35,10 @@ Lisa is built as a security-first agent runtime: explicit approvals,
 inspectable tool calls, and enforceable limits are the discipline of two
 decades in identity and privileged-access engineering.
 
+Built for sysadmins moving from operating Linux boxes to supervising
+agents: the read/write/execute approval model exists precisely for that
+transition.
+
 Maintainer: [Adam Migus, The Migus Group](https://github.com/amigus)
 ([mig.us/adam](https://mig.us/adam))
 
