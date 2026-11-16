@@ -1,27 +1,29 @@
 # Lisa Harness
 
-Lisa is a modular, extensible AI agent runtime and host: an inspectable
-tool-enabled turn loop, intent-driven mode switching, event-driven model
-routing, and explicit read/write/execute approvals. A host owns the operator
-conversation; installed packs supply everything the agent can do.
+Lisa Harness is a modular AI agent runtime built around an inspectable,
+tool-enabled turn loop. Its host owns the operator conversation, while
+capability packs supply the tools and workflows available to the agent.
+
+- ⭐ **Interested in Lisa?** [Star the project](https://github.com/Lisa-Harness/lisa).
+- ▶ **Want to run Lisa?** [Install with Lisa CLI](https://github.com/Lisa-Harness/lisa-cli#install).
+
+## Why Lisa?
+
+- Intent-driven modes control which tools are available.
+- Event-driven routing selects models during execution.
+- Effectful tool calls use explicit read, write, and execute approvals.
+- Packs add capabilities e.g. memory and sandbox so they are swappable.
 
 | Repository | Role |
 | --- | --- |
-| [lisa](https://github.com/Lisa-Harness/lisa) | The framework: kernel, SDK, runtime, MCP servers, and bundled reference packs |
-| [lisa-cli](https://github.com/Lisa-Harness/lisa-cli) | The CLI host — install this to run Lisa |
-| [lisa-go](https://github.com/Lisa-Harness/lisa-go) | Go Connector SDK for first-party MCP servers and host/embed tooling |
-| [`lisa-pack-*` repositories](https://github.com/orgs/Lisa-Harness/repositories?q=lisa-pack) | One repository and PyPI distribution per capability pack |
+| [lisa](https://github.com/Lisa-Harness/lisa) | Framework, kernel, SDK, and runtime — start here to understand or contribute to the project |
+| [lisa-cli](https://github.com/Lisa-Harness/lisa-cli) | Recommended host for installing and running Lisa |
+| [lisa-go](https://github.com/Lisa-Harness/lisa-go) | Go Connector SDK for MCP servers and host/embed tooling |
+| [Public packs](https://github.com/orgs/Lisa-Harness/repositories?q=lisa-pack) | Optional, capability-specific extensions |
 
-Packs add shell execution, sandboxing, web search providers, memory backends,
-document formats, and more. Installation does not imply activation: session
-selection and host policy decide what the agent can see. See the
-[external pack registry](https://github.com/Lisa-Harness/lisa-packs).
-
-## Get started
-
-- [Getting started](https://github.com/Lisa-Harness/lisa/blob/main/docs/GETTING_STARTED.md)
-- [Documentation index](https://github.com/Lisa-Harness/lisa/blob/main/docs/README.md)
-- [Pack authoring guide](https://github.com/Lisa-Harness/lisa/blob/main/docs/PACK_AUTHORING_GUIDE.md)
+Read the [documentation index](https://github.com/Lisa-Harness/lisa/blob/main/docs/README.md),
+[getting started guide](https://github.com/Lisa-Harness/lisa/blob/main/docs/GETTING_STARTED.md),
+or [pack authoring guide](https://github.com/Lisa-Harness/lisa/blob/main/docs/PACK_AUTHORING_GUIDE.md).
 
 ## Contribute
 
@@ -31,15 +33,8 @@ selection and host policy decide what the agent can see. See the
 
 ## Who's behind Lisa Harness
 
-Lisa is built as a security-first agent runtime: explicit approvals,
-inspectable tool calls, and enforceable limits are the discipline of two
-decades in identity and privileged-access engineering.
-
-Built for sysadmins moving from operating Linux boxes to supervising
-agents: the read/write/execute approval model exists precisely for that
-transition.
-
-Maintainer: [Adam Migus, The Migus Group](https://github.com/amigus)
-([mig.us/adam](https://mig.us/adam))
-
-Framework and pack code is [MIT licensed](https://github.com/Lisa-Harness/lisa/blob/main/LICENSE).
+[Adam Migus](https://mig.us/adam)
+([GitHub](https://github.com/amigus))
+created and released Lisa under the
+[MIT license](https://github.com/Lisa-Harness/lisa/blob/main/LICENSE)
+and welcomes contributors!
