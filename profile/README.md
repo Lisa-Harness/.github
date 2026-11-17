@@ -1,27 +1,35 @@
 # Lisa Harness
 
-Lisa Harness is a modular AI agent runtime built around an inspectable,
-tool-enabled turn loop. Its host owns the operator conversation, while
-capability packs supply the tools and workflows available to the agent.
+- 👀 **Interested in Lisa?** [Star the repo](https://github.com/Lisa-Harness/lisa)! ⭐
+- ✨ **Want to run Lisa?** [Install lisa-cli](https://github.com/Lisa-Harness/lisa-cli#install)! 🚀
 
-- ⭐ **Interested in Lisa?** [Star the project](https://github.com/Lisa-Harness/lisa).
-- ▶ **Want to run Lisa?** [Install with Lisa CLI](https://github.com/Lisa-Harness/lisa-cli#install).
+Lisa is an AI agent harness and MCP-based runtime built around an extensible tool-enabled turn loop.
+Running it requires a host like [lisa-cli](https://github.com/Lisa-Harness/lisa-cli).
+The host supplies a transport,
+model access,
+and bootstraps the MCP and model proxy servers.
+It also loads packs that supply servers, tools and workflows.
 
-## Why Lisa?
+## Key features
 
-- Intent-driven modes control which tools are available.
-- Event-driven routing selects models during execution.
-- Effectful tool calls use explicit read, write, and execute approvals.
-- Packs add capabilities e.g. memory and sandbox so they are swappable.
+- **Intent-driven modes** reset the system prompt and control which tools are available.
+- **Effect receipt collection** enables the harness to verify the model deliverables.
+- **Event-driven model routing** changes the model dynamically based on runtime state.
+- **Harness-managed model context** that does not summarize or use lossy compaction.
+- **Harness-enforced limits** on iteration, token and tool-calls.
+
+## Components
 
 | Repository | Role |
 | --- | --- |
 | [lisa](https://github.com/Lisa-Harness/lisa) | Framework, kernel, SDK, and runtime — start here to understand or contribute to the project |
 | [lisa-cli](https://github.com/Lisa-Harness/lisa-cli) | Recommended host for installing and running Lisa |
-| [lisa-go](https://github.com/Lisa-Harness/lisa-go) | Go Connector SDK for MCP servers and host/embed tooling |
-| [Public packs](https://github.com/orgs/Lisa-Harness/repositories?q=lisa-pack) | Optional, capability-specific extensions |
+| [lisa-go](https://github.com/Lisa-Harness/lisa-go) | *Experimental* Go connector SDK, MCP servers and host/embed tooling |
+| [lisa-pack-*](https://github.com/orgs/Lisa-Harness/repositories?q=lisa-pack) | Loadable capability packs |
 
-Read the [documentation index](https://github.com/Lisa-Harness/lisa/blob/main/docs/README.md),
+## Docs
+
+See the [documentation index](https://github.com/Lisa-Harness/lisa/blob/main/docs/README.md),
 [getting started guide](https://github.com/Lisa-Harness/lisa/blob/main/docs/GETTING_STARTED.md),
 or [pack authoring guide](https://github.com/Lisa-Harness/lisa/blob/main/docs/PACK_AUTHORING_GUIDE.md).
 
@@ -36,5 +44,4 @@ or [pack authoring guide](https://github.com/Lisa-Harness/lisa/blob/main/docs/PA
 [Adam Migus](https://mig.us/adam)
 ([GitHub](https://github.com/amigus))
 created and released Lisa under the
-[MIT license](https://github.com/Lisa-Harness/lisa/blob/main/LICENSE)
-and welcomes contributors!
+[MIT license](https://github.com/Lisa-Harness/lisa/blob/main/LICENSE).
