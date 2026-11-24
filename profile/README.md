@@ -1,8 +1,7 @@
 # Lisa Harness
 
-- ✨ **Want to run Lisa?** [Install lisa-cli](https://github.com/Lisa-Harness/lisa-cli#install)! 🚀
-- 👀 **Keep an eye on it?** [Star the repo](https://github.com/Lisa-Harness/lisa)! ⭐
-
+- **Want to run Lisa?** 🚀 [Install lisa-cli](https://github.com/Lisa-Harness/lisa-cli#install)!
+- **Like the project?** 🫶 [⭐ the repo](https://github.com/Lisa-Harness/lisa)!
 Lisa is an AI agent harness and MCP-based runtime built around a flexible tool-enabled turn loop.
 Running it requires a host like [lisa-cli](https://github.com/Lisa-Harness/lisa-cli).
 The host supplies a transport,
