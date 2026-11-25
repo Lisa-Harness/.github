@@ -1,22 +1,25 @@
 # Lisa Harness
 
-- **Want to run Lisa?** [Install lisa-cli](https://github.com/Lisa-Harness/lisa-cli#install)! 🚀
-- **Like the project?** [star the repo](https://github.com/Lisa-Harness/lisa)! ⭐
-
 Lisa is an AI agent harness and MCP-based runtime built around a flexible tool-enabled turn loop.
-Running it requires a host like [lisa-cli](https://github.com/Lisa-Harness/lisa-cli).
+
+- **Like the project?** [star the repo](https://github.com/Lisa-Harness/lisa)! ⭐
+- **Want to run Lisa?** [Install lisa-cli](https://github.com/Lisa-Harness/lisa-cli#install)! 🚀
+
+Lisa is a kernel, runtime and SDK so,
+running it requires a host.
 The host supplies a transport,
 LLM/model access,
 and bootstraps the MCP and proxy servers.
-It also loads packs that supply servers, tools and workflows.
+It can also load packs to supply any combination of modes, proxies, servers, tools and workflows.
+[lisa-cli](https://github.com/Lisa-Harness/lisa-cli) is a full-featured pack-loading host.
 
-## Key features
+## Key turn loop features
 
 - **Intent-driven modes** reset the system prompt and control which tools are available.
 - **Effect receipt collection** enables the harness to verify the model deliverables.
 - **Event-driven model routing** changes the model dynamically based on runtime state.
-- **Harness-managed model context** that does not summarize or use lossy compaction.
-- **Harness-enforced limits** on iteration, token and tool-calls.
+- **Harness-enforced limits** on iterations, mode switches, tokens and tool-calls.
+- **Harness-managed model context** without summarization or lossy compaction.
 
 ## Components
 
